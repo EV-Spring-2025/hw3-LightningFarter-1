@@ -67,35 +67,50 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
 ### baseline results
 <table>
 <tr>
-<td align="center">
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/baseline/output.gif" width="400" />
-    <figcaption style="text-align: center;">sand baseline</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/baseline/output.gif" width="400" />
-    <figcaption style="text-align: center;">snow baseline</figcaption>
-  </figure>
-</td>
+    <td align="center">
+        <img src="outputs/sand/baseline/output.gif" width="400" /><br/>
+        <sub>sand baseline</sub>
+    </td>
+    <td align="center">
+        <img src="outputs/snow/baseline/output.gif" width="400" /><br/>
+        <sub>snow baseline</sub>
+    </td>
 </tr>
 <table>
 
 ### Ablation: `n_grid`
 <table>
 <tr>
-<td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/grid_10/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand n_grid = 10</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/grid_25/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand n_grid = 25</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/grid_50/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand n_grid = 50</figcaption>
-  </figure>
+    <td align="center">
+        <img src="outputs/sand/grid_10/output.gif" width="233" /><br/>
+        <sub>sand n_grid = 10</sub>
+    </td>
+    <td align="center">
+        <img src="outputs/sand/grid_25/output.gif" width="233" /><br/>
+        <sub>sand n_grid = 25</sub>
+    </td>
+    <td align="center">
+        <img src="outputs/sand/grid_50/output.gif" width="233" /><br/>
+        <sub>sand n_grid = 50</sub>
+    </td>
+</td>
+</tr>
+<table>
+
+<table>
+<tr>
+    <td align="center">
+        <img src="outputs/snow/grid_10/output.gif" width="233" /><br/>
+        <sub>snow n_grid = 10</sub>
+    </td>
+    <td align="center">
+        <img src="outputs/snow/grid_25/output.gif" width="233" /><br/>
+        <sub>snow n_grid = 25</sub>
+    </td>
+    <td align="center">
+        <img src="outputs/snow/grid_50/output.gif" width="233" /><br/>
+        <sub>snow n_grid = 50</sub>
+    </td>
 </td>
 </tr>
 <table>
@@ -103,33 +118,14 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/grid_10/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow n_grid = 10</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/grid_25/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow n_grid = 25</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/grid_50/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow n_grid = 50</figcaption>
-  </figure>
-</td>
-</tr>
-<table>
-
-<table>
-<tr>
-<td align="center">
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/grid.png" width="400" />
-    <figcaption style="text-align: center;">sand n_grid psnr curve</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/grid.png" width="400" />
-    <figcaption style="text-align: center;">snow n_grid psnr curve</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/grid.png" width="400" /><br/>
+    <sub>sand n_grid psnr curve</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/grid.png" width="400" /><br/>
+    <sub>snow n_grid psnr curve</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -154,14 +150,14 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/substeps_1e-5/output.gif" width="400" />
-    <figcaption style="text-align: center;">sand substeps = 1e-5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/substeps_1e-6/output.gif" width="400" />
-    <figcaption style="text-align: center;">sand substeps = 1e-6</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/substeps_1e-5/output.gif" width="400" /><br/>
+    <sub>sand substeps = 1e-5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/substeps_1e-6/output.gif" width="400" /><br/>
+    <sub>sand substeps = 1e-6</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -169,14 +165,14 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/substep_1e-5/output.gif" width="400" />
-    <figcaption style="text-align: center;">snow substeps = 1e-5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/substep_1e-6/output.gif" width="400" />
-    <figcaption style="text-align: center;">snow substeps = 1e-6</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/snow/substep_1e-5/output.gif" width="400" /><br/>
+    <sub>snow substeps = 1e-5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/substep_1e-6/output.gif" width="400" /><br/>
+    <sub>snow substeps = 1e-6</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -184,14 +180,14 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/substeps.png" width="400" />
-    <figcaption style="text-align: center;">sand substeps psnr curve</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/substep.png" width="400" />
-    <figcaption style="text-align: center;">snow substeps psnr curve</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/substeps.png" width="400" /><br/>
+    <sub>sand substeps psnr curve</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/substep.png" width="400" /><br/>
+    <sub>snow substeps psnr curve</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -212,22 +208,22 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/sand/damp_p5/output.gif" width="175" />
-    <figcaption style="text-align: center;">sand grid_v_damping_scale = 0.5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/sand/damp_p99/output.gif" width="175" />
-    <figcaption style="text-align: center;">sand grid_v_damping_scale = 0.99</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/sand/damp_1/output.gif" width="175" />
-    <figcaption style="text-align: center;">sand grid_v_damping_scale = 1</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/sand/damp_1p5/output.gif" width="175" />
-    <figcaption style="text-align: center;">sand grid_v_damping_scale = 1.5</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/damp_p5/output.gif" width="175" /><br/>
+    <sub>sand grid_v_damping_scale = 0.5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/damp_p99/output.gif" width="175" /><br/>
+    <sub>sand grid_v_damping_scale = 0.99</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/damp_1/output.gif" width="175" /><br/>
+    <sub>sand grid_v_damping_scale = 1</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/damp_1p5/output.gif" width="175" /><br/>
+    <sub>sand grid_v_damping_scale = 1.5</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -235,22 +231,22 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/snow/damp_p5/output.gif" width="175" />
-    <figcaption style="text-align: center;">snow grid_v_damping_scale = 0.5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/snow/damp_p99/output.gif" width="175" />
-    <figcaption style="text-align: center;">snow grid_v_damping_scale = 0.99</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/snow/damp_1/output.gif" width="175" />
-    <figcaption style="text-align: center;">snow grid_v_damping_scale = 1</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 24%; margin: 0%">
-    <img src="outputs/snow/damp_1p5/output.gif" width="175" />
-    <figcaption style="text-align: center;">snow grid_v_damping_scale = 1.5</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/snow/damp_p5/output.gif" width="175" /><br/>
+    <sub>snow grid_v_damping_scale = 0.5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/damp_p99/output.gif" width="175" /><br/>
+    <sub>snow grid_v_damping_scale = 0.99</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/damp_1/output.gif" width="175" /><br/>
+    <sub>snow grid_v_damping_scale = 1</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/damp_1p5/output.gif" width="175" /><br/>
+    <sub>snow grid_v_damping_scale = 1.5</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -258,14 +254,14 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/damp.png" width="400" />
-    <figcaption style="text-align: center;">sand grid_v_damping_scale psnr curve</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/damp.png" width="400" />
-    <figcaption style="text-align: center;">snow grid_v_damping_scale psnr curve</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/damp.png" width="400" /><br/>
+    <sub>sand grid_v_damping_scale psnr curve</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/damp.png" width="400" /><br/>
+    <sub>snow grid_v_damping_scale psnr curve</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -286,18 +282,18 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/soften_0/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand softening = 0</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/soften_p5/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand softening = 0.5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/soften_1/output.gif" width="233" />
-    <figcaption style="text-align: center;">sand softening = 1</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/soften_0/output.gif" width="233" /><br/>
+    <sub>sand softening = 0</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/soften_p5/output.gif" width="233" /><br/>
+    <sub>sand softening = 0.5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/sand/soften_1/output.gif" width="233" /><br/>
+    <sub>sand softening = 1</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -305,18 +301,18 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/soften_0/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow softening = 0</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/soften_p5/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow softening = 0.5</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/soften_1/output.gif" width="233" />
-    <figcaption style="text-align: center;">snow softening = 1</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/snow/soften_0/output.gif" width="233" /><br/>
+    <sub>snow softening = 0</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/soften_p5/output.gif" width="233" /><br/>
+    <sub>snow softening = 0.5</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/soften_1/output.gif" width="233" /><br/>
+    <sub>snow softening = 1</sub>
+  </td>
 </td>
 </tr>
 <table>
@@ -324,14 +320,14 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
 <table>
 <tr>
 <td align="center">
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/soften.png" width="400" />
-    <figcaption style="text-align: center;">sand soften psnr curve</figcaption>
-  </figure>
-  <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/soften.png" width="400" />
-    <figcaption style="text-align: center;">snow soften psnr curve</figcaption>
-  </figure>
+  <td align="center">
+    <img src="outputs/sand/soften.png" width="400" /><br/>
+    <sub>sand soften psnr curve</sub>
+  </td>
+  <td align="center">
+    <img src="outputs/snow/soften.png" width="400" /><br/>
+    <sub>snow soften psnr curve</sub>
+  </td>
 </td>
 </tr>
 <table>
