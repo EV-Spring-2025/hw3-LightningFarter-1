@@ -65,7 +65,7 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
 
 ## Results and Findings
 ### baseline results
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
     <img src="outputs/sand/baseline/output.gif" width="100%" />
     <figcaption style="text-align: center;">sand baseline</figcaption>
@@ -77,7 +77,7 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
 </p>
 
 ### Ablation: `n_grid`
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/sand/grid_10/output.gif" width="100%" />
     <figcaption style="text-align: center;">sand n_grid = 10</figcaption>
@@ -92,7 +92,7 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/snow/grid_10/output.gif" width="100%" />
     <figcaption style="text-align: center;">snow n_grid = 10</figcaption>
@@ -107,7 +107,7 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
     <img src="outputs/sand/grid.png" width="100%" />
     <figcaption style="text-align: center;">sand n_grid psnr curve</figcaption>
@@ -135,7 +135,7 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
 
 ### Ablation: `substeps`
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/sand/substeps_1e-5/output.gif" width="100%" />
     <figcaption style="text-align: center;">sand substeps = 1e-5</figcaption>
@@ -146,7 +146,7 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/snow/substep_1e-5/output.gif" width="100%" />
     <figcaption style="text-align: center;">snow substeps = 1e-5</figcaption>
@@ -157,7 +157,7 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
     <img src="outputs/sand/substeps.png" width="100%" />
     <figcaption style="text-align: center;">sand substeps psnr curve</figcaption>
@@ -181,7 +181,7 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
 
 ### Ablation: `grid_v_damping_scale`
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 24%; margin: 0%">
     <img src="outputs/sand/damp_p5/output.gif" width="100%" />
     <figcaption style="text-align: center;">sand grid_v_damping_scale = 0.5</figcaption>
@@ -200,7 +200,7 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 24%; margin: 0%">
     <img src="outputs/snow/damp_p5/output.gif" width="100%" />
     <figcaption style="text-align: center;">snow grid_v_damping_scale = 0.5</figcaption>
@@ -219,7 +219,7 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
     <img src="outputs/sand/damp.png" width="100%" />
     <figcaption style="text-align: center;">sand grid_v_damping_scale psnr curve</figcaption>
@@ -243,7 +243,7 @@ From the PSNR point of view. `sand` particle has PSNR curve almost the same in `
 For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since the exerted force takes almost no effect and does not bends the plant. Whereas, `1` and `1.5` creates higher PSNR result since it bends to the same place as baseline, but trembles at about the end of simulation due to the flashing effect of the high speed particle running out of simulation bound.
 
 ### Ablation: `softening`
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/sand/soften_0/output.gif" width="100%" />
     <figcaption style="text-align: center;">sand softening = 0</figcaption>
@@ -258,7 +258,7 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/snow/soften_0/output.gif" width="100%" />
     <figcaption style="text-align: center;">snow softening = 0</figcaption>
@@ -273,7 +273,7 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
   </figure>
 </p>
 
-<p float="left">
+<p align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
     <img src="outputs/sand/soften.png" width="100%" />
     <figcaption style="text-align: center;">sand soften psnr curve</figcaption>
