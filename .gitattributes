@@ -1,2 +1,0 @@
-outputs/sand/damp_1/output.gif filter=lfs diff=lfs merge=lfs -text
-outputs/sand/damp_1p5/output.gif filter=lfs diff=lfs merge=lfs -text
