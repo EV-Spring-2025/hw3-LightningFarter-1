@@ -65,19 +65,25 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
 
 ## Results and Findings
 ### baseline results
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/baseline/output.gif" width="350" />
+    <img src="outputs/sand/baseline/output.gif" width="400" />
     <figcaption style="text-align: center;">sand baseline</figcaption>
   </figure>
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/baseline/output.gif" width="350" />
+    <img src="outputs/snow/baseline/output.gif" width="400" />
     <figcaption style="text-align: center;">snow baseline</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
 ### Ablation: `n_grid`
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/sand/grid_10/output.gif" width="233" />
     <figcaption style="text-align: center;">sand n_grid = 10</figcaption>
@@ -90,9 +96,13 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
     <img src="outputs/sand/grid_50/output.gif" width="233" />
     <figcaption style="text-align: center;">sand n_grid = 50</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/snow/grid_10/output.gif" width="233" />
     <figcaption style="text-align: center;">snow n_grid = 10</figcaption>
@@ -105,18 +115,24 @@ python mp4_to_gif.py <input_mp4> <output_gif> --fps 60
     <img src="outputs/snow/grid_50/output.gif" width="233" />
     <figcaption style="text-align: center;">snow n_grid = 50</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/grid.png" width="350" />
+    <img src="outputs/sand/grid.png" width="400" />
     <figcaption style="text-align: center;">sand n_grid psnr curve</figcaption>
   </figure>
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/grid.png" width="350" />
+    <img src="outputs/snow/grid.png" width="400" />
     <figcaption style="text-align: center;">snow n_grid psnr curve</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
 `n_grid` determines the resolution of simulation. It divides the simulation space into `n_grid x n_grid x n_grid` 3D gridsm where, physical quantities are calculated and exchanged between particles and the grid.
 The higher `n_grid` is, the more details could be simulated, allows for more accurate simulation of small-scale features and deformations.
@@ -135,38 +151,50 @@ And for PSNR curve of snow, it is more significant after frame 30, where the hig
 
 ### Ablation: `substeps`
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/substeps_1e-5/output.gif" width="350" />
+    <img src="outputs/sand/substeps_1e-5/output.gif" width="400" />
     <figcaption style="text-align: center;">sand substeps = 1e-5</figcaption>
   </figure>
   <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/sand/substeps_1e-6/output.gif" width="350" />
+    <img src="outputs/sand/substeps_1e-6/output.gif" width="400" />
     <figcaption style="text-align: center;">sand substeps = 1e-6</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/substep_1e-5/output.gif" width="350" />
+    <img src="outputs/snow/substep_1e-5/output.gif" width="400" />
     <figcaption style="text-align: center;">snow substeps = 1e-5</figcaption>
   </figure>
   <figure style="display: inline-block; width: 30%; margin: 1%">
-    <img src="outputs/snow/substep_1e-6/output.gif" width="350" />
+    <img src="outputs/snow/substep_1e-6/output.gif" width="400" />
     <figcaption style="text-align: center;">snow substeps = 1e-6</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/substeps.png" width="350" />
+    <img src="outputs/sand/substeps.png" width="400" />
     <figcaption style="text-align: center;">sand substeps psnr curve</figcaption>
   </figure>
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/substep.png" width="350" />
+    <img src="outputs/snow/substep.png" width="400" />
     <figcaption style="text-align: center;">snow substeps psnr curve</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
 `substeps` determines the simulation substeps scaling per frame. Each frame is consisted of smaller steps internally to improve stability and accuracy.
 The higher substeps the less accurate and faster the simulation process takes. The lower the substeps is, it creates more smaller intermidiate steps for more accurate result while lenghtening the simulation time and simulated video.
@@ -181,7 +209,9 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
 
 ### Ablation: `grid_v_damping_scale`
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 24%; margin: 0%">
     <img src="outputs/sand/damp_p5/output.gif" width="175" />
     <figcaption style="text-align: center;">sand grid_v_damping_scale = 0.5</figcaption>
@@ -198,9 +228,13 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
     <img src="outputs/sand/damp_1p5/output.gif" width="175" />
     <figcaption style="text-align: center;">sand grid_v_damping_scale = 1.5</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 24%; margin: 0%">
     <img src="outputs/snow/damp_p5/output.gif" width="175" />
     <figcaption style="text-align: center;">snow grid_v_damping_scale = 0.5</figcaption>
@@ -217,18 +251,24 @@ For PSNR curve of snow, since the result is almost the same. The PSNR curve show
     <img src="outputs/snow/damp_1p5/output.gif" width="175" />
     <figcaption style="text-align: center;">snow grid_v_damping_scale = 1.5</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/damp.png" width="350" />
+    <img src="outputs/sand/damp.png" width="400" />
     <figcaption style="text-align: center;">sand grid_v_damping_scale psnr curve</figcaption>
   </figure>
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/damp.png" width="350" />
+    <img src="outputs/snow/damp.png" width="400" />
     <figcaption style="text-align: center;">snow grid_v_damping_scale psnr curve</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
 `grid_v_damping_scale` determines the velocity damping scale applied at grid level. It controls how quickly the motion is dissipated from teh grid velocities during simulation.
 The higher the value is, the slower the velocity is damped, which retains more velocity.
@@ -243,7 +283,9 @@ From the PSNR point of view. `sand` particle has PSNR curve almost the same in `
 For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since the exerted force takes almost no effect and does not bends the plant. Whereas, `1` and `1.5` creates higher PSNR result since it bends to the same place as baseline, but trembles at about the end of simulation due to the flashing effect of the high speed particle running out of simulation bound.
 
 ### Ablation: `softening`
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/sand/soften_0/output.gif" width="233" />
     <figcaption style="text-align: center;">sand softening = 0</figcaption>
@@ -256,9 +298,13 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
     <img src="outputs/sand/soften_1/output.gif" width="233" />
     <figcaption style="text-align: center;">sand softening = 1</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 30%; margin: 1%">
     <img src="outputs/snow/soften_0/output.gif" width="233" />
     <figcaption style="text-align: center;">snow softening = 0</figcaption>
@@ -271,18 +317,24 @@ For `snow` particle has PSNR curve almost the same for `0.5` and `0.99` since th
     <img src="outputs/snow/soften_1/output.gif" width="233" />
     <figcaption style="text-align: center;">snow softening = 1</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
-<p align="center">
+<table>
+<tr>
+<td align="center">
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/sand/soften.png" width="350" />
+    <img src="outputs/sand/soften.png" width="400" />
     <figcaption style="text-align: center;">sand soften psnr curve</figcaption>
   </figure>
   <figure style="display: inline-block; width: 45%; margin: 1%">
-    <img src="outputs/snow/soften.png" width="350" />
+    <img src="outputs/snow/soften.png" width="400" />
     <figcaption style="text-align: center;">snow soften psnr curve</figcaption>
   </figure>
-</p>
+</td>
+</tr>
+<table>
 
 `softening` is a parameter that smooths interaction between particles and the grid, or between particles themselves. The use is to avoid sinularities or extreme forces that can arise when particles are too close.
 The higher `softening` is, the higher minimum distance in force calculation is and creates more stable results.
