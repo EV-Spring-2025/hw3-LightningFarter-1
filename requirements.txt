@@ -1,0 +1,15 @@
+h5py
+numpy
+opencv_python
+opencv_python_headless
+Pillow
+plyfile
+PyMCubes
+pymeshlab
+scipy
+setuptools
+taichi
+tqdm
+warp_lang
+matplotlib
+moviepy==1.0.3
